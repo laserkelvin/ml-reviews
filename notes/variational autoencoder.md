@@ -1,0 +1,18 @@
+---
+tags: needs-expanding
+---
+
+# variational autoencoder
+
+
+A probabilistic [[architecture]] from the family of [[autoencoders]]. The self-learned representation is used to parameterize a probability distribution (i.e. the [[posterior distribution]]), from which a decoder can draw samples from to generate a range of outputs. We can either directly predict the mean of the distribution, or perform sampling over the distribution to obtain #uncertainty estimates.
+
+Is a sub-category of [[bayesian-neural-networks]], whereby variational inference is done, usually in contrast to full [[MCMC]] sampling.
+
+Problem with VAEs is that they are susceptible to [[posterior collapse]], where a single output is produced regardless: this is when the decoder ignores the latent variable completely, and becomes a deterministic model.
+
+[This blog by Lilian Weng](https://lilianweng.github.io/lil-log/2018/08/12/from-autoencoder-to-beta-vae.html) has an incredibly in-depth description of the theory behind VAEs.
+
+## Types of VAEs
+
+- [[beta-VAE]] provides a tuning parameter, $\beta$, that attempts to force disentangling of the latent vector into unit Gaussian priors. Relatively easy to understand and implement, however quite readily suffers from [[posterior collapse]].

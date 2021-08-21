@@ -1,0 +1,5 @@
+# Adversarial training
+
+Training examples given to a model that are *close* to the original training examples - i.e. perturbations that are indistinguishable by humans - but cause the model to misclassify.
+
+Goodfellow proposed the [[fast gradient sign method]] to generate adversarial examples quickly. Under that framework, with $\varepsilon$ noise, you basically smooth out your regressor predictions into a $\varepsilon$-neighborhood.

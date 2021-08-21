@@ -1,0 +1,5 @@
+# posterior collapse
+
+An issue primarily related to [[variational autoencoder]] models, where the output becomes deterministic in a supposedly probabilistic model.
+
+Some annealing schemes, such as [[cyclical-annealing-schedule-a-simple-approach-to-mitigating-kl-vanishing]] is developed to help VAEs learn to encode good latent variables *and* good accuracy in the outputs.
