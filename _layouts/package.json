@@ -7,7 +7,9 @@
     "gatsby": "^2.23.18",
     "gatsby-theme-garden": "^0.1.28",
     "react": "^16.3.1",
-    "react-dom": "^16.3.1"
+    "react-dom": "^16.3.1",
+    "gatsby-transformer-remark": "^4.9.0",
+    "gatsby-remark-mathjax": "1.0.0"
   },
   "keywords": [
     "foam"
