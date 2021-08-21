@@ -15,6 +15,9 @@ module.exports = {
           "**/.github/**",
           "**/.vscode/**",
         ],
+        plugins: [
+          `gatsby-remark-mathjax`,
+        ],
       },
     },
   ],
