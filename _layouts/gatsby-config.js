@@ -1,7 +1,23 @@
 module.exports = {
   pathPrefix: `/ml-reviews`,
   siteMetadata: {
-    title: `Foam`,
+    title: `ML Reviews`,
+    author: `Kelvin Lee`,
+    description: `A Zettelkasten for machine learning concepts and methods.`,
+    social: [
+      {
+        name: `twitter`,
+        url: `https://www.twitter.com/cmmmsubmm`
+      },
+      {
+        name: `github`,
+        url: `https://github.com/laserkelvin`
+      },
+      {
+        name: `website`,
+        url: `https://laserkelvin.github.io`
+      }
+    ]
   },
   plugins: [
     {
