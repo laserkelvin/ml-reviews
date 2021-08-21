@@ -15,6 +15,11 @@ module.exports = {
           "**/.github/**",
           "**/.vscode/**",
         ],
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
         plugins: [
           `gatsby-remark-mathjax`,
         ],
