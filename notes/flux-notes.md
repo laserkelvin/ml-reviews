@@ -38,3 +38,17 @@ begin
 	(m::Split)(x::AbstractArray) = tuple(map(f -> f(x), m.paths))
 end
 ```
+
+The better way to do this is to use the `Parallel` "layer" in Flux. Logically it resembles a `mapreduce`: you send the input to a variable amount of sinks, and the outputs are combined by an `op`.
+
+```julia
+model = Chain(
+	Dense(5, 10, relu),
+	Parallel(
+		vcat,
+		[Dense(10, 2) for _ in 1:5]...
+	)
+)
+```
+
+This "model" takes a 5-feature input, and transforms to 10-features. The 10-feature arrays are then passed to 5 fully-connected layers, each with an output of 2-features. The `vcat` operation merges the arrays together in the feature dimension, yielding a 10-feature array.
