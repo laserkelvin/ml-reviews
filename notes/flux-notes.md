@@ -39,6 +39,7 @@ begin
 end
 ```
 
+<<<<<<< Updated upstream
 The better way to do this is to use the `Parallel` "layer" in Flux. Logically it resembles a `mapreduce`: you send the input to a variable amount of sinks, and the outputs are combined by an `op`.
 
 ```julia
@@ -52,3 +53,22 @@ model = Chain(
 ```
 
 This "model" takes a 5-feature input, and transforms to 10-features. The 10-feature arrays are then passed to 5 fully-connected layers, each with an output of 2-features. The `vcat` operation merges the arrays together in the feature dimension, yielding a 10-feature array.
+=======
+## `Parallel` into a new dimension
+
+Sometimes (like for an ensemble) you want to be able to combine the outputs of multiple layers into a new dimension. The quickest way to do this:
+
+```julia
+begin
+   cat3(xs...) = cat(xs...; dims=3)
+
+   Parallel(
+	   cat3,
+	   Dense(2, 5),
+	   Dense(2, 5),
+	   Dense(2, 5)
+   )(rand(2, 10))
+```
+
+...will result in a `2 x 10 x 3` array.
+>>>>>>> Stashed changes
