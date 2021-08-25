@@ -16,7 +16,9 @@ jobs:
       - name: Build website
         run: npm run build -- --prefix-paths
         working-directory: _layouts
-
+        # this compresses the images hopefully
+      - name: Image Actions
+        uses: calibreapp/image-actions@1.1.0
       - name: Deploy to the gh-pages branch
         # only deploy when the main branch has some changes
         if: github.ref == 'refs/heads/master'
