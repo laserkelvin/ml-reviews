@@ -1,5 +1,5 @@
 ---
-tags: julia, flux
+tags: julia, flux, neural-networks
 ---
 
 # flux-notes
