@@ -19,6 +19,8 @@ jobs:
         # this compresses the images hopefully
       - name: Image Actions
         uses: calibreapp/image-actions@1.1.0
+        with:
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
       - name: Deploy to the gh-pages branch
         # only deploy when the main branch has some changes
         if: github.ref == 'refs/heads/master'
