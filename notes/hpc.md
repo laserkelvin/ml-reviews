@@ -3,6 +3,6 @@
 
 ## Terminology
 
-Starting from the bottom moving up to the top:
+Here's a quick diagram to show the hierarchy:
 
 ![hpc-terms](attachments/hpc-terms.svg)
