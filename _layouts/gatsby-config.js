@@ -34,11 +34,10 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: "gatsby-plugin-mdx",
       options: {
-        plugins: [
-          `gatsby-remark-mathjax`,
-        ],
+        remarkPlugins: [require("remark-math")],
+        rehypePlugins: [require("rehype-katex")]
       },
     },
   ],
