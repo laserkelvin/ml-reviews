@@ -1,3 +1,7 @@
+const path = require('path')
+
+const PATH_PREFIX = process.env.PATH_PREFIX
+
 module.exports = {
   pathPrefix: `/ml-reviews`,
   siteMetadata: {
