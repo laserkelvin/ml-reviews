@@ -16,7 +16,6 @@ jobs:
       - name: Build website
         run: npm run build -- --prefix-paths
         working-directory: _layouts
-
       - name: Deploy to the gh-pages branch
         # only deploy when the main branch has some changes
         if: github.ref == 'refs/heads/master'
