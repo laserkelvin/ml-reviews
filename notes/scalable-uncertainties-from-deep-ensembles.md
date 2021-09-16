@@ -49,7 +49,7 @@ tags: papers, uncertainty, deep-ensembles, pytorch, julia
 
 - Typical regression NN will minimize MSE, i.e. the output corresponds to the regression mean. Here, the authors suggest to output *two values*: the predicted mean and variance. The variance is done via $\sigma = (1 + \exp(x)) + \varepsilon$ where $\varepsilon$ is a small positive number of numerical stability.
 - The [[negative log-likelihood]] criterion used:
-$$ -\log p_\theta(y_n \vert x_n) = \frac{\log \sigma^2_\theta(x)}{2} + \frac{(y - \mu_\theta(x))^2}{2\sigma^2_\theta(x)} + C$$
+$$-\log p_\theta(y_n \vert x_n) = \frac{\log \sigma^2_\theta(x)}{2} + \frac{(y - \mu_\theta(x))^2}{2\sigma^2_\theta(x)} + C$$
 
 Julia implementation:
 
@@ -121,7 +121,6 @@ end
 [ensembles]: ensembles "ensembles"
 [bayesian-neural-networks]: bayesian-neural-networks "bayesian-neural-networks"
 [scoring rule]: scoring rule "scoring rule"
-[maximum likelihood]: maximum likelihood "maximum likelihood"
 [Adversarial training]: Adversarial training "Adversarial training"
 [negative log-likelihood]: negative log-likelihood "negative log-likelihood"
 [fast gradient sign method]: fast gradient sign method "fast gradient sign method"
