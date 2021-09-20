@@ -21,6 +21,13 @@ f(a, b) = a + b
 f.(Ref(a), b)
 ```
 
+### Composing functions
+
+```julia
+f1(x) = sin(cos(x))
+f2 = sin \circ cos
+```
+
 ### Anonymous functions
 
 In Python, we write `lambda` functions that are oneshot:
