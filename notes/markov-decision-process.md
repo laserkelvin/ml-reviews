@@ -4,6 +4,8 @@
 - $s_t \in S$, comprising all possible states (which may not be finite)
 - Decisions made based on transition probabilities, $T(s' \vert s, a)$, that maps actions taken on the current state influencing the next state
 
+The $T(s' \vert s, a)$ I don't fully understand yet, but I perceive it as something that is connected to the idea of exploration versus exploitation: the balance between making optimal decisions and discovering new state space. You can change $T(s' \vert s,a)$ such that you offer some chance to make the sub-optimal choice, i.e. wander off the trail.
+
 ## Finite horizons
 
 - The reward function comprises decomposable timesteps:
@@ -16,7 +18,7 @@
 For problems that do not have a finite number of decisions, $t$ can go forever. There are two ways to stop $r_t\rightarrow\infty$:
 
 - A time-dependent discount function: $\sum_{t=1}^{\infty}\gamma^{t-1}r_t$
-- A time-averaged reward: $\lim_{n\rightarrow\infty} \frac{1}{n}\sum_{t=1}^{n}\r_t$
+- A time-averaged reward: $\lim_{n\to\infty}\frac{1}{n}\sum_{t=1}^{n} r_t$
 
 Apparently there isn't much difference between the two, although the latter doesn't need to tune the discount rate, however the *former is computationally easier.*
 

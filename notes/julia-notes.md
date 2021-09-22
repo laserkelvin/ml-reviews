@@ -1,5 +1,9 @@
 # julia-notes
 
+## LaTeX unicode
+
+`\scrS` for the fancy script ${S}$ used in MDP states.
+
 ## Helpful cheatsheet to Julia commands
 
 [Julia cheatsheet](https://juliadocs.github.io/Julia-Cheat-Sheet/)
