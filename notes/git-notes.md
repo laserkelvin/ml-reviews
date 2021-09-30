@@ -1,7 +1,7 @@
 # git-notes
 
 
-## A useful collection of Git commands
+## A (useful) collection of Git commands
 
 From [this blogpost](https://github.blog/2015-06-08-how-to-undo-almost-anything-with-git/):
 
@@ -65,6 +65,8 @@ feat: add hat wobble
 - `refactor`: (refactoring production code, eg. renaming a variable)
 - `test`: (adding missing tests, refactoring tests; no production code change)
 - `chore`: (updating grunt tasks etc; no production code change)
+- `ci`: (changes to CI/CD processes)
+- `env`: (changes to the software environment, e.g. dependencies, `setup.py`)
 
 ### References:
 
