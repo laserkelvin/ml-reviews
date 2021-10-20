@@ -6,7 +6,7 @@ In an alternative way of writing Bayes' rule:
 
 $$p(\Theta) = \frac{\mathcal{L}(\Theta)\pi(\Theta)}{\mathcal{Z}}$$
 
-where $\mathcal{Z}=\int_{\Omega_{\Theta}} \mathcal{L}(\Theta)\pi(\Theta)~d\Theta$; i.e. the posterior $p(\Theta)$ is given by the normalized product of likelihood and prior, with $\Theta$ in the hypothesis space $\Omega_\Theta$.
+where $\mathcal{Z}=\int_{\Omega_{\Theta}} \mathcal{L}(\Theta)\pi(\Theta)~d\Theta$; i.e. the posterior $p(\Theta)$ is given by the normalized product of likelihood and prior, with $\Theta$ in the hypothesis space $\Omega_\Theta$. In essence, the posterior is just a vector of weights to $\Theta$.
 
 The motivation behind this is to be able to compare between models $M$, which involves integration over _volumes_ of parameter space, as opposed to the surface sampled by conventional MCMC.
 
