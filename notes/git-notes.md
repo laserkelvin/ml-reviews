@@ -67,6 +67,8 @@ feat: add hat wobble
 - `chore`: (updating grunt tasks etc; no production code change)
 - `ci`: (changes to CI/CD processes)
 - `env`: (changes to the software environment, e.g. dependencies, `setup.py`)
+- `model`: (changes to a model architecture)
+- `data`: (changes to a data pipeline; transformations, loading, etc.)
 
 ### References:
 
