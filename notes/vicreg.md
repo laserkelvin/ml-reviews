@@ -49,7 +49,7 @@ tags: papers
 
 The variance regularization term is given by a [[hinge-loss]]:
 
-$$ v(Z) = \frac{1}{d}\sum_{j=1}^{d}\max(0, \gamma - \sqrt{\mathrm{Var}(Z_{:,j}) + \epsilon}) $$
+$$v(Z) = \frac{1}{d}\sum_{j=1}^{d}\max(0, \gamma - \sqrt{\mathrm{Var}(Z_{:,j}) + \epsilon})$$
 
 where $\gamma$ is a target value for the standard deviation (fixed to one for this paper)[^2], and $\mathrm{Var}(x)$ is the variance estimator:
 
@@ -81,7 +81,7 @@ i.e. the mean squared Euclidean distance between each network embedding pair.
 
 ### The full loss
 
-$$l(Z,Z') = \lambda s(Z,Z') + \mu\{v(Z) + v(Z')\} + v\{c(Z) + c(Z')\} $$
+$$l(Z,Z') = \lambda s(Z,Z') + \mu\{v(Z) + v(Z')\} + v\{c(Z) + c(Z')\}$$
 
 with hyperparameters $\lambda$, $\mu$, and $\nu$.
 
