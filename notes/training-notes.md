@@ -17,4 +17,13 @@ Here is a checklist of milestones for developing and testing model architectures
 
 One thing I haven't really done in the past, which might be helpful is to take smaller subsets of data and annotate tags of my own that might be helpful in diagnosing why a model performs poorly in any of checklist items.
 
+## Degraded model performance
+
+Possible reasons why models perform worse in production:
+
+- Data drift; statistics change over different time frames that could be seasonal or unpredictable (e.g. pandemics). At a low level, feature importances could change over time.
+- Bad data collection, e.g. damaged sensors on cameras, etc.
+
+
+
 [^1]: Probably depends on who you ask, but the project goals should probably be defined well before the beginning of this list 😅

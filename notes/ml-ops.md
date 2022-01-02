@@ -7,6 +7,8 @@ The main ideas include [[scalability]] of models, both in terms of training and 
 
 Key concept is to maximize coupling between stages of *scoping*, *data*, *modeling*, and *deployment* so that you can go back to prior steps with minimal effort and iterate.
 
+> Translating user needs into data/ML needs
+
 Some articles on the topic:
 
 - [Nvidia blog](https://blogs.nvidia.com/blog/2020/09/03/what-is-mlops/)
@@ -20,7 +22,7 @@ The first step of the MLOps lifecycle is to work out what the ways ML can improv
 
 Part of the scoping process is *diligence*: an assessment on feasibility, cost, and value. The first can be determined by a literature search, or seeing if others have done something similar, and establish a baseline (may be human level performance). 
 
-The scoping of value needs to reconcile ML metrics (e.g. loss, accuracy) with application metrics/value, for example revenue for businesses, societal benefits, or degree of  automation for data analysis. 
+The scoping of value needs to reconcile ML metrics (e.g. loss, accuracy) with application metrics/value, for example revenue for businesses, societal benefits, or degree of  automation for data analysis.
 
 The scoping of cost involves defining milestones and resources needed/available. We want to define deliverables, how performance can be measured, a timeline for when this can be feasibly done, and finally the resources/people needed to achieve this.
 
