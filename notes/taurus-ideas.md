@@ -8,6 +8,12 @@ Things to consider:
 2. Scalability
 3. Plotting summaries
 
+Packages to consider:
+
+1. Flux (for obvious reasons)
+2. [Dagger](https://github.com/JuliaParallel/Dagger.jl) for DAG computation, probably for data transformation pipelines
+3. DataFrames, Table for tabular data processing
+
 ## Data processing pipeline
 
 Implement components as `struct`s:
