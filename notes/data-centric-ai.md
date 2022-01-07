@@ -28,3 +28,11 @@ Conceptually, we would need a pipeline that serves to continuously evaluate and 
 *Chebyshev distance* used for categorical features in #tfx; $D(x,y) = \rm{max}(\vert x_i-y_i \vert)$.
 
 *Schema skew* detects discrepancies between types, e.g. `int`/`str` between training and production data.
+
+## Lingo
+
+**Feature store**: central repository for documented, curated features specifically for models.
+
+**Data warehouse**: centralized repository of data, scaled up from databases, that hold structured non-volatile data for fast read.
+
+**Data lakes**: centralized repository of data without any preprocessing whatsoever, I guess for example sensor data.
