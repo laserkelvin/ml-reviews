@@ -33,7 +33,7 @@ $$\frac{dx}{dt} = f_\theta(\mathrm{x}(t), t$$
 
 - A specific class of continuous time networks, liquid time-constant networks, expand in complexity:
 
-$$\frac{d\mathrm{x}(t)}{dt} = -\[\frac{1}{\tau} + f_\theta(\mathrm{x}(t), t)\] \odot \mathrm{x}(t) + f_\theta(\mathrm{x}(t), t) \odot A$$
+$$\frac{d\mathrm{x}(t)}{dt} = -[\frac{1}{\tau} + f_\theta(\mathrm{x}(t), t)] \odot \mathrm{x}(t) + f_\theta(\mathrm{x}(t), t) \odot A$$
 
 where $\tau$ is thought of as a constant related to equilibrium, $A$ is an output control bias vector, and $\odot$ is the Hadamard product (elementwise operation). I don't have a great intuition for this expression, but to an extent it introduces "residual" elements that improve its expressitivity.
 
@@ -47,7 +47,7 @@ where $\tau$ is thought of as a constant related to equilibrium, $A$ is an outpu
 - Agents were implemented with NCP, other neural ODEs, and RNNs in a closed- (i.e. position information feedback) and open-loop (no position feedback to the agent)
 - Finding was that neural ODE architectures and RNNs perform poorling in open-loop scenarios, although all performed quite well within closed-loop. The authors ascribe this difference as causal reasoning by inspecting salicency maps (gradients of pixels w.r.t. control inputs): only NCP showed attention to the target in *why* it made a particular control decision.
 
-![picture 1](images/3ff8e70776714af5cf082df4a5e6c2b11682b7929c601aeb0a249bd044dd2e45.png)  
+![picture 1](attachments/3ff8e70776714af5cf082df4a5e6c2b11682b7929c601aeb0a249bd044dd2e45.png)  
 
 - The result looks nice, but I can't help but wonder why they didn't use the same environment to show the saliency maps...
 - The interesting thing to look at as well is how each model learns: for example, LSTM seems incredibly affected by lighting
