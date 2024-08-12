@@ -54,7 +54,7 @@ $$x^{L}_\mathbf{f} = \mathrm{SO3\_ Linear}^L \left ( \vert \vert \mathbf{f} \ver
 
 A diagram of the workflow from the paper is shown below:
 
-![picture 0](images/f81d30745b470744e4d2e49bebd9c356adbc5033bd5cf16925ea01556c7d28f9.png)  
+![picture 0](attachments/f81d30745b470744e4d2e49bebd9c356adbc5033bd5cf16925ea01556c7d28f9.png)  
 
 The actual training regime, based on the figure above and as recommended by the authors, is to only _partially_ corrupt the structure, and isolate the denoising task to only the noisy nodes, and do force regression on only the uncorrupted nodes.
 
